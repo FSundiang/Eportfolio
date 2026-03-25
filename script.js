@@ -14,14 +14,20 @@ let current = 'about';
 function toggleMenu() {
   const navLinks  = document.getElementById('nav-links');
   const hamburger = document.getElementById('hamburger');
-  navLinks.classList.toggle('open');
-  hamburger.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
+  hamburger.classList.toggle('open', isOpen);
 }
 
 function closeMenu() {
   document.getElementById('nav-links').classList.remove('open');
   document.getElementById('hamburger').classList.remove('open');
 }
+
+// Close menu when clicking outside
+document.addEventListener('click', e => {
+  const nav = document.querySelector('nav');
+  if (!nav.contains(e.target)) closeMenu();
+});
 
 function navigate(id) {
   if (id === current) return;
