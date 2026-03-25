@@ -22,12 +22,17 @@
 <!-- Navbar -->
 <nav>
   <div class="logo" onclick="navigate('about')">FS<span>.</span></div>
-  <div class="nav-links">
+  <div class="nav-links" id="nav-links">
     <button class="nav-btn active" id="nav-about" onclick="navigate('about')">About Me</button>
     <button class="nav-btn" id="nav-certs" onclick="navigate('certs')">Certifications</button>
     <button class="nav-btn" id="nav-projects" onclick="navigate('projects')">Projects</button>
     <button class="nav-btn" id="nav-contact" onclick="navigate('contact')">Contact</button>
   </div>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
 
 <main>
@@ -430,7 +435,7 @@
             <div class="ci-icon">✉️</div>
             <div>
               <div class="ci-label">Email</div>
-              <div class="ci-value"><p>sundiang.franciscarl@gmail.com</p></div>
+              <div class="ci-value"><p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="592a2c373d3038373e773f2b38373a302a3a382b35193e34383035773a3634">[email&#160;protected]</a></p></div>
             </div>
           </div>
           <div class="contact-item">
@@ -501,10 +506,3 @@
   <button class="lightbox-close" onclick="closeLightbox()">✕</button>
   <div class="lightbox-content" onclick="event.stopPropagation()">
     <img class="lightbox-img" id="lightbox-img" src="" alt="Certificate"/>
-    <div class="lightbox-caption" id="lightbox-caption"></div>
-  </div>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
