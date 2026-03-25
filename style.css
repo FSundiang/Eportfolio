@@ -559,10 +559,11 @@
     background: rgba(255,255,255,.08);
     border: 1px solid var(--border);
     color: var(--text); font-size: .9rem;
-    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    cursor: pointer; display: none; align-items: center; justify-content: center;
     transition: background .2s, transform .2s;
     line-height: 1;
   }
+  .lightbox.active .lightbox-close { display: flex; }
   .lightbox-close:hover { background: rgba(0,245,196,.15); transform: scale(1.1); }
 
   /* Footer */
@@ -586,7 +587,7 @@
 
   /* ── Hamburger ── */
   .hamburger {
-    display: none !important;
+    display: none;
     flex-direction: column; justify-content: center; align-items: center;
     gap: 5px;
     width: 40px; height: 40px;
@@ -612,7 +613,7 @@
   @media (max-width: 768px) {
     nav { padding: 0 20px; }
 
-    .hamburger { display: flex !important; }
+    .hamburger { display: flex; }
 
     .nav-links {
       display: none;
