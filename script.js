@@ -11,8 +11,22 @@ const PAGES   = { about: 'page-about', certs: 'page-certs', projects: 'page-proj
 const NAV_IDS = { about: 'nav-about',  certs: 'nav-certs',  projects: 'nav-projects',  contact: 'nav-contact'  };
 let current = 'about';
 
+function toggleMenu() {
+  const navLinks  = document.getElementById('nav-links');
+  const hamburger = document.getElementById('hamburger');
+  navLinks.classList.toggle('open');
+  hamburger.classList.toggle('open');
+}
+
+function closeMenu() {
+  document.getElementById('nav-links').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
+
 function navigate(id) {
   if (id === current) return;
+
+  closeMenu();
 
   const oldPage = document.getElementById(PAGES[current]);
   const newPage = document.getElementById(PAGES[id]);
