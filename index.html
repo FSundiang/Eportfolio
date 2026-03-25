@@ -8,6 +8,54 @@
 <link rel="stylesheet" href="style.css"/>
 <link rel="website icon" type="png" href="certificates/logo2.png">
 
+<style>
+  /* ── Project Tabs ── */
+  .proj-tabs {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto 36px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 6px;
+    width: fit-content;
+  }
+  .proj-tab {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 24px;
+    border: none; border-radius: 10px;
+    background: none;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: .9rem; font-weight: 500;
+    cursor: pointer;
+    transition: background .2s, color .2s, box-shadow .2s;
+    white-space: nowrap;
+  }
+  .proj-tab .tab-icon { font-size: 1rem; }
+  .proj-tab:hover { color: var(--text); background: var(--surface2); }
+  .proj-tab.active {
+    background: linear-gradient(135deg, rgba(0,245,196,.12), rgba(123,97,255,.12));
+    color: var(--text);
+    box-shadow: 0 0 0 1px rgba(0,245,196,.25);
+  }
+  .proj-tab-panel { display: none; }
+  .proj-tab-panel.active { display: block; }
+
+  /* Client badge on thumb */
+  .client-badge {
+    position: absolute; bottom: 10px; left: 10px;
+    background: rgba(123,97,255,.18);
+    border: 1px solid rgba(123,97,255,.35);
+    color: #a78bff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .72rem; font-weight: 600;
+    letter-spacing: .5px;
+    padding: 3px 10px; border-radius: 20px;
+    text-transform: uppercase;
+    backdrop-filter: blur(4px);
+  }
+</style>
 </head>
 <body>
 
@@ -258,12 +306,26 @@
     <div class="page-header">
       <div class="page-eyebrow">◈ Portfolio</div>
       <h2 class="page-title">Featured Projects</h2>
-      <p class="page-subtitle">A Project page contains my best works and Mockup designs.</p>
+      <p class="page-subtitle">A collection of my personal works and projects built for clients.</p>
     </div>
 
+    <!-- Project Tabs -->
+    <div style="display:flex; justify-content:center; padding: 0 48px;">
+    <div class="proj-tabs">
+      <button class="proj-tab active" id="tab-mine" onclick="switchTab('mine')">
+        <span class="tab-icon">🛠️</span> My Projects
+      </button>
+      <button class="proj-tab" id="tab-client" onclick="switchTab('client')">
+        <span class="tab-icon">🤝</span> Client Projects
+      </button>
+    </div>
+    </div><!-- end tab wrapper -->
+
+    <!-- MY PROJECTS -->
+    <div class="proj-tab-panel active" id="panel-mine">
     <div class="projects-grid">
       <div class="project-card reveal" style="animation-delay:.05s">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)" onclick="openProjectMedia('certificates/mother-and-child.png','Mother and Child Pharmacy','image')">
           <div class="project-thumb-inner">🏥</div>
           <div class="project-overlay"></div>
           <img src="certificates/mother-and-child.png" alt="Project Thumbnail" class="project-thumb-img"/>
@@ -286,7 +348,7 @@
       </div>
 
       <div class="project-card reveal" style="animation-delay:.05s">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)" onclick="openProjectMedia('certificates/PharmaLanding.png','MediCare','image')">
           <div class="project-thumb-inner">💊</div>
           <div class="project-overlay"></div>
           <img src="certificates/PharmaLanding.png" alt="Project Thumbnail" class="project-thumb-img"/>
@@ -307,7 +369,7 @@
       </div>
 
       <div class="project-card reveal" style="animation-delay:.05s">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)" onclick="openProjectMedia('certificates/wedding.png','Wedding Website','image')">
           <div class="project-thumb-inner">💍</div>
           <div class="project-overlay"></div>
           <img src="certificates/wedding.png" alt="Project Thumbnail" class="project-thumb-img"/>
@@ -329,7 +391,7 @@
       </div>
 
       <div class="project-card reveal" style="animation-delay:.1s">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0f1a2e,#1a0d2e)">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f1a2e,#1a0d2e)" onclick="openProjectMedia('certificates/writing-assistant.png','Writing Assistant','image')">
           <div class="project-thumb-inner">🤖</div>
           <div class="project-overlay"></div>
             <img src="certificates/writing-assistant.png" alt="Project Thumbnail" class="project-thumb-img"/>
@@ -351,7 +413,7 @@
       </div>
 
       <div class="project-card reveal" style="animation-delay:.1s">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0f1a2e,#1a0d2e)">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f1a2e,#1a0d2e)" onclick="openProjectMedia('certificates/web-assistance.png','Writing Assistance','image')">
           <div class="project-thumb-inner">🤖</div>
           <div class="project-overlay"></div>
             <img src="certificates/web-assistance.png" alt="Project Thumbnail" class="project-thumb-img"/>
@@ -372,7 +434,7 @@
       </div>
 
       <div class="project-card reveal" style="animation-delay:.15s">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a1a,#0d2a1a)">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a1a,#0d2a1a)" onclick="openProjectMedia('certificates/neko.png','NekoBento','image')">
           <div class="project-thumb-inner">🛒</div>
           <img src="certificates/neko.png" alt="Project Thumbnail" class="project-thumb-img"/>
           <div class="project-overlay"></div>
@@ -393,7 +455,30 @@
       </div>
 
       <div class="project-card reveal" style="animation-delay:.2s">
-        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1000,#2a1500)">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1000,#2a1500)" onclick="openProjectMedia('certificates/introweb.png','Final Peta - Intro Web Dev','image')">
+          <div class="project-thumb-inner">🎨</div>
+          <img src="certificates/introweb.png" alt="Project Thumbnail" class="project-thumb-img"/>
+          <div class="project-overlay"></div>
+          <span class="project-status status-live">Live</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Final Peta in Introduction in Web Development</div>
+          <p class="project-desc">A Final Project introduction that we've created on 1st year</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <div class="project-actions">
+          <a href="https://sample-project-design.netlify.app/" target="_blank" rel="noopener" class="proj-btn proj-btn-primary">↗ Live Demo</a>
+          <a href="https://github.com/FSundiang/introweb_finals" target="_blank" rel="noopener" class="proj-btn proj-btn-secondary">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="project-card reveal" style="animation-delay:.2s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1000,#2a1500)" onclick="openProjectMedia('certificates/introweb.png','Final Peta - Intro Web Dev','image')">
           <div class="project-thumb-inner">🎨</div>
           <img src="certificates/introweb.png" alt="Project Thumbnail" class="project-thumb-img"/>
           <div class="project-overlay"></div>
@@ -414,6 +499,32 @@
         </div>
       </div>
     </div>
+    </div><!-- end panel-mine -->
+
+    <!-- CLIENT PROJECTS -->
+    <div class="proj-tab-panel" id="panel-client">
+      <div class="projects-grid">
+
+        <div class="project-card reveal" style="animation-delay:.05s">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)" onclick="openProjectMedia('vid/To-Do-List.mp4','To-Do List App','video')">
+            <div class="project-thumb-inner">📋</div>
+            <div class="project-overlay"></div>
+            <video src="vid/To-Do-List.mp4" class="project-thumb-video" autoplay loop muted playsinline></video>
+            <span class="project-status status-live">Live</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title">To-Do List App</div>
+            <p class="project-desc">A List that can saved your task.</p>
+            <div class="project-stack">
+              <span class="stack-tag">Kotlin</span>
+              <span class="stack-tag">Mobile Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- end panel-client -->
+
   </section>
 
   <!-- ── CONTACT PAGE ── -->
@@ -435,7 +546,7 @@
             <div class="ci-icon">✉️</div>
             <div>
               <div class="ci-label">Email</div>
-              <div class="ci-value"><p>sundiang.franciscarl@gmail.com</p></div>
+               <div class="ci-value"><p>sundiang.franciscarl@gmail.com</p></div>
             </div>
           </div>
           <div class="contact-item">
@@ -505,10 +616,51 @@
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <button class="lightbox-close" onclick="closeLightbox()">✕</button>
   <div class="lightbox-content" onclick="event.stopPropagation()">
-    <img class="lightbox-img" id="lightbox-img" src="" alt="Certificate"/>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Project Preview" style="display:block"/>
+    <video class="lightbox-video" id="lightbox-video" src="" controls autoplay loop muted style="display:none"></video>
     <div class="lightbox-caption" id="lightbox-caption"></div>
   </div>
 </div>
+<script>
+  function switchTab(tab) {
+    document.querySelectorAll('.proj-tab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.proj-tab-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('tab-' + tab).classList.add('active');
+    document.getElementById('panel-' + tab).classList.add('active');
+    observeReveals();
+  }
+
+  function openProjectMedia(src, caption, type) {
+    const lb  = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    const vid = document.getElementById('lightbox-video');
+    const cap = document.getElementById('lightbox-caption');
+    if (type === 'video') {
+      img.style.display = 'none';
+      vid.style.display = 'block';
+      vid.src = src; vid.play();
+    } else {
+      vid.style.display = 'none'; vid.pause(); vid.src = '';
+      img.style.display = 'block';
+      img.src = src;
+    }
+    cap.textContent = caption;
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Override closeLightbox to also stop video
+  document.addEventListener('DOMContentLoaded', () => {
+    const origClose = window.closeLightbox;
+    window.closeLightbox = function() {
+      const vid = document.getElementById('lightbox-video');
+      if (vid) { vid.pause(); vid.src = ''; }
+      document.getElementById('lightbox-img').src = '';
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    };
+  });
+</script>
 <script src="script.js"></script>
 </body>
 </html>
