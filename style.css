@@ -586,7 +586,7 @@
 
   /* ── Hamburger ── */
   .hamburger {
-    display: none;
+    display: none !important;
     flex-direction: column; justify-content: center; align-items: center;
     gap: 5px;
     width: 40px; height: 40px;
@@ -612,7 +612,7 @@
   @media (max-width: 768px) {
     nav { padding: 0 20px; }
 
-    .hamburger { display: flex; }
+    .hamburger { display: flex !important; }
 
     .nav-links {
       display: none;
