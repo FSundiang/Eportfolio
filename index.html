@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>E-Portfolio | Francis Sundiang</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="website icon" type="png" href="certificates/logo2.png">
+
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Ambient -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo" onclick="navigate('about')">FS<span>.</span></div>
+  <div class="nav-links">
+    <button class="nav-btn active" id="nav-about" onclick="navigate('about')">About Me</button>
+    <button class="nav-btn" id="nav-certs" onclick="navigate('certs')">Certifications</button>
+    <button class="nav-btn" id="nav-projects" onclick="navigate('projects')">Projects</button>
+    <button class="nav-btn" id="nav-contact" onclick="navigate('contact')">Contact</button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ── ABOUT PAGE ── -->
+  <section class="page active" id="page-about">
+    <div class="about-hero">
+      <div class="hero-left">
+        <div class="hero-tag">
+          <span></span> Available for opportunities
+        </div>
+        <h1 class="hero-name">Francis Carl<br><em>Sundiang</em></h1>
+        <p class="hero-desc">
+          An aspiring UI/UX Designer and Front-End Developer pursuing a BS in Information Technology (Web Development) at Holy Angel University, passionate about creating user-friendly and visually engaging digital experiences using Figma, HTML, CSS, and JavaScript, while drawing inspiration from modern UI trends to build intuitive and meaningful interfaces.
+        </p>
+        <div class="hero-cta">
+          <button class="btn-primary" onclick="navigate('projects')">
+            ▶ View My Work
+          </button>
+          <button class="btn-ghost" onclick="navigate('contact')">
+            ✉ Get In Touch
+          </button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="avatar-wrap">
+          <div class="avatar-frame">
+            <div class="avatar-initials">FS</div>
+            <div class="avatar-glow"></div>
+          </div>
+          <div class="avatar-badge">
+            <div class="badge-num"></div>
+            <div class="badge-label">Fresh Graduate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="stat-num">4<span>+</span></div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">12<span>+</span></div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-label">Passion</div>
+      </div>
+    </div>
+
+    <div class="skills-section">
+      <div class="section-title">Core <span>Skills</span></div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <div class="skill-name">Angular / TypeScript</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <div class="skill-name">UI/UX Design</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+         <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <div class="skill-name">Figma | Adobe Photoshop</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <div class="skill-name">HTML</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <div class="skill-name">CSS</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <div class="skill-name">Slightly knowledge in SQL</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS PAGE ── -->
+  <section class="page" id="page-certs">
+    <div class="page-header">
+      <div class="page-eyebrow">◈ Credentials</div>
+      <h2 class="page-title">My Certifications</h2>
+      <p class="page-subtitle">A collection of professional certifications and achievements that validate my expertise across various domains.</p>
+    </div>
+
+    <div class="certs-grid">
+      <div class="cert-card reveal" style="animation-delay:.05s">
+        <div class="cert-issuer-logo" style="background:rgba(255,153,0,.1)">🌐</div>
+        <img src="certificates/Responsive Web Design V8.jpg" alt="Responsive Web Design Certificate" class="cert-image"/>
+        <div class="cert-title">Responsive Web Design</div>
+        <div class="cert-issuer">Responsive Web Design</div>
+        <div class="cert-meta">
+          <span class="cert-tag accent">Responsive</span>
+          <span class="cert-tag">Web Design</span>
+        </div>
+        <div class="cert-footer">
+          <div class="cert-date">📅 Jan 2024</div>
+          <a href="https://www.freecodecamp.org/certification/Sundiang-Francis-Carl-A/responsive-web-design" class="cert-link">View Credential →</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" style="animation-delay:.1s">
+        <div class="cert-issuer-logo" style="background:rgba(0,114,240,.1)">🔷</div>
+        <img src="certificates/JavaScript Algorithms and Data Structures.jpg" alt="JavaScript Algorithms and Data Structures Certificate" class="cert-image"/>
+        <div class="cert-title">Legacy JavaScript Algorithms and Data Structure</div>
+        <div class="cert-issuer">Legacy JavaScript Algorithms and Data Structure</div>
+        <div class="cert-meta">
+          <span class="cert-tag accent">JavaScript</span>
+        </div>
+        <div class="cert-footer">
+          <div class="cert-date">📅 March 2024</div>
+          <a href="https://www.freecodecamp.org/certification/Sundiang-Francis-Carl-A/javascript-algorithms-and-data-structures" class="cert-link">View Credential →</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" style="animation-delay:.15s">
+        <div class="cert-issuer-logo" style="background:rgba(234,67,53,.1)">📊</div>
+        <img src="certificates/Figma-Coursera.jpg" alt="Figma Coursera Certificate" class="cert-image"/>
+        <div class="cert-title">Get Started with Figma</div>
+        <div class="cert-issuer">Coursera Figma</div>
+        <div class="cert-meta">
+          <span class="cert-tag accent">Coursera</span>
+        </div>
+        <div class="cert-footer">
+          <div class="cert-date">📅 Oct 2023</div>
+          <a href="https://www.coursera.org/account/accomplishments/verify/X3NX5TGGW6PQ" class="cert-link">View Credential →</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" style="animation-delay:.2s">
+        <div class="cert-issuer-logo" style="background:rgba(123,97,255,.1)">🔐</div>
+        <img src="certificates/Google Analytics.jpg" alt="Google Analytics Certificate" class="cert-image"/>
+        <div class="cert-title">Google Analytics</div>
+        <div class="cert-issuer">Google Analytics</div>
+        <div class="cert-meta">
+          <span class="cert-tag accent">Analytics</span>
+        </div>
+        <div class="cert-footer">
+          <div class="cert-date">📅 Nov 2022</div>
+          <a href="https://skillshop.credential.net/b7ac701e-70bd-4e03-ba11-4d1fbd1fe6a6#acc.KGzIrkji" class="cert-link">View Credential →</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" style="animation-delay:.25s">
+        <div class="cert-issuer-logo" style="background:rgba(0,245,196,.1)">⚙️</div>
+        <img src="certificates/HubSpot SEO II.jpg" alt="HubSpot SEO II Certificate" class="cert-image"/>
+        <div class="cert-title">HubSpot SEO II</div>
+        <div class="cert-issuer">SEO II</div>
+        <div class="cert-meta">
+          <span class="cert-tag accent">HubSpot</span>
+          <span class="cert-tag">SEO II</span>
+        </div>
+        <div class="cert-footer">
+          <div class="cert-date">📅 Jan 2025</div>
+          <a href="#" class="cert-link">View Credential →</a>
+        </div>
+      </div>
+       <div class="cert-card reveal" style="animation-delay:.25s">
+        <div class="cert-issuer-logo" style="background:rgba(0,245,196,.1)">⚙️</div>
+        <img src="certificates/HubSpot SEO.jpg" alt="HubSpot SEO Certificate" class="cert-image"/>
+        <div class="cert-title">HubSpot SEO</div>
+        <div class="cert-issuer">SEO</div>
+        <div class="cert-meta">
+          <span class="cert-tag accent">HubSpot</span>
+          <span class="cert-tag">SEO</span>
+        </div>
+        <div class="cert-footer">
+          <div class="cert-date">📅 Jan 2025</div>
+          <a href="https://app.hubspot.com/academy/48975824/tracks/1069125/exam/award/1069125?language=en" class="cert-link">View Credential →</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" style="animation-delay:.3s">
+        <div class="cert-issuer-logo" style="background:rgba(255,90,90,.1)">📊</div>
+        <img src="certificates/Project Management.jpg" alt="Project Management Certificate" class="cert-image"/>
+        <div class="cert-title">Great Learning</div>
+        <div class="cert-issuer">Project Management</div>
+        <div class="cert-meta">
+          <span class="cert-tag accent">Project Management</span>
+        </div>
+        <div class="cert-footer">
+          <div class="cert-date">📅 Sept 2025</div>
+          <a href="https://www.mygreatlearning.com/certificate/GLJRHTTN?referrer_code=GLEDHH35W8JWO" class="cert-link">View Credential →</a>
+        </div>
+      </div>
+
+         <div class="cert-card reveal" style="animation-delay:.3s">
+        <div class="cert-issuer-logo" style="background:rgba(255,90,90,.1)">📊</div>
+        <img src="certificates/Leadership Management.jpg" alt="Leadership and Management Certificate" class="cert-image"/>
+        <div class="cert-title">Great Learning</div>
+        <div class="cert-issuer">Leadership and Management</div>
+        <div class="cert-meta">
+          <span class="cert-tag accent">Leadership and Management</span>
+        </div>
+        <div class="cert-footer">
+          <div class="cert-date">📅 Sept 2025</div>
+          <a href="https://www.mygreatlearning.com/certificate/SKDUIRCC?referrer_code=GLEDHH35W8JWO" class="cert-link">View Credential →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS PAGE ── -->
+  <section class="page" id="page-projects">
+    <div class="page-header">
+      <div class="page-eyebrow">◈ Portfolio</div>
+      <h2 class="page-title">Featured Projects</h2>
+      <p class="page-subtitle">A Project page contains my best works and Mockup designs.</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal" style="animation-delay:.05s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)">
+          <div class="project-thumb-inner">🏥</div>
+          <div class="project-overlay"></div>
+          <img src="certificates/mother-and-child.png" alt="Project Thumbnail" class="project-thumb-img"/>
+          <span class="project-status status-live">Live</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Mother and Child Pharmacy (Capstone)</div>
+          <p class="project-desc">A Medfind website based located in Porac, Pampanga.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Angular</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Figma</span>
+            <span class="stack-tag">MySQL</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://www.motherandchildpharmacy.com/" target="_blank" rel="noopener" class="proj-btn proj-btn-primary">↗ Live Demo</a>
+            <a href="https://github.com/Mayk29/capstone2_medfind_group4" target="_blank" rel="noopener" class="proj-btn proj-btn-secondary">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="animation-delay:.05s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)">
+          <div class="project-thumb-inner">💊</div>
+          <div class="project-overlay"></div>
+          <img src="certificates/PharmaLanding.png" alt="Project Thumbnail" class="project-thumb-img"/>
+          <span class="project-status status-wip">In Progress</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">MediCare</div>
+          <p class="project-desc">A MediCare website mockup</p>
+          <div class="project-stack">
+            <span class="stack-tag">Figma</span>
+            <span class="stack-tag">TypeScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://pharmacylandingpagedesign.vercel.app/" target="_blank" rel="noopener" class="proj-btn proj-btn-primary">↗ Live Demo</a>
+            <a href="https://github.com/FSundiang/Pharmacylandingpagedesign" target="_blank" rel="noopener" class="proj-btn proj-btn-secondary">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="animation-delay:.05s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#1a2332)">
+          <div class="project-thumb-inner">💍</div>
+          <div class="project-overlay"></div>
+          <img src="certificates/wedding.png" alt="Project Thumbnail" class="project-thumb-img"/>
+          <span class="project-status status-wip">In Progress</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Wedding Website</div>
+          <p class="project-desc">A website for wedding invitation.</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://wedding-ten-sepia.vercel.app/#" target="_blank" rel="noopener" class="proj-btn proj-btn-primary">↗ Live Demo</a>
+            <a href="https://github.com/FSundiang/wedding" target="_blank" rel="noopener" class="proj-btn proj-btn-secondary">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="animation-delay:.1s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f1a2e,#1a0d2e)">
+          <div class="project-thumb-inner">🤖</div>
+          <div class="project-overlay"></div>
+            <img src="certificates/writing-assistant.png" alt="Project Thumbnail" class="project-thumb-img"/>
+          <span class="project-status status-wip">In Progress</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Writing Assistant</div>
+          <p class="project-desc">A writing assitant landing page mockup, not fully functional.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Figma</span>
+            <span class="stack-tag">TypeScript</span>
+    
+          </div>
+          <div class="project-actions">
+            <a href="https://writing-assitant.vercel.app/" target="_blank" rel="noopener" class="proj-btn proj-btn-primary">↗ Live Demo</a>
+            <a href="https://github.com/FSundiang/writing-assitant" target="_blank" rel="noopener" class="proj-btn proj-btn-secondary">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="animation-delay:.1s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f1a2e,#1a0d2e)">
+          <div class="project-thumb-inner">🤖</div>
+          <div class="project-overlay"></div>
+            <img src="certificates/web-assistance.png" alt="Project Thumbnail" class="project-thumb-img"/>
+          <span class="project-status status-wip">In Progress</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Writing Assistance</div>
+          <p class="project-desc">A writing assistance landing page mockup, not fully functional.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Figma</span>
+            <span class="stack-tag">TypeScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://websiteassitance.vercel.app/" target="_blank" rel="noopener" class="proj-btn proj-btn-primary">↗ Live Demo</a>
+            <a href="https://github.com/FSundiang/writing-assitant" target="_blank" rel="noopener" class="proj-btn proj-btn-secondary">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="animation-delay:.15s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a1a,#0d2a1a)">
+          <div class="project-thumb-inner">🛒</div>
+          <img src="certificates/neko.png" alt="Project Thumbnail" class="project-thumb-img"/>
+          <div class="project-overlay"></div>
+          <span class="project-status status-live">Live</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">NekoBento (School Project)</div>
+          <p class="project-desc">A headless e-commerce website containing Filipino and Japanese foods.</p>
+          <div class="project-stack">
+            <span class="stack-tag">PHP</span>
+            <span class="stack-tag">MySQL</span>
+          </div>
+          <div class="project-actions">
+            <button class="proj-btn proj-btn-primary">↗ Live Demo</button>
+            <a href="https://github.com/FSundiang/food" target="_blank" rel="noopener" class="proj-btn proj-btn-secondary">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="animation-delay:.2s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1000,#2a1500)">
+          <div class="project-thumb-inner">🎨</div>
+          <img src="certificates/introweb.png" alt="Project Thumbnail" class="project-thumb-img"/>
+          <div class="project-overlay"></div>
+          <span class="project-status status-live">Live</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Final Peta in Introduction in Web Development</div>
+          <p class="project-desc">A Final Project introduction that we've created on 1st year</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <div class="project-actions">
+          <a href="https://sample-project-design.netlify.app/" target="_blank" rel="noopener" class="proj-btn proj-btn-primary">↗ Live Demo</a>
+          <a href="https://github.com/FSundiang/introweb_finals" target="_blank" rel="noopener" class="proj-btn proj-btn-secondary">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT PAGE ── -->
+  <section class="page" id="page-contact">
+    <div class="page-header">
+      <div class="page-eyebrow">◈ Let's Connect</div>
+      <h2 class="page-title">Get In Touch</h2>
+      <p class="page-subtitle">Have a project in mind or just want to chat? My inbox is always open.</p>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-info reveal">
+        <p class="contact-blurb">
+          Whether you're looking to collaborate on an exciting project, need a developer for your team, or simply want to connect — I'd love to hear from you. I typically respond within 24 hours.
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-value"><p>sundiang.franciscarl@gmail.com</p></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-value">Pampanga, Philippines</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">🕐</div>
+            <div>
+              <div class="ci-label">Response Time</div>
+              <div class="ci-value">Within 24 hours</div>
+            </div>
+          </div>
+        </div>
+
+       <div class="social-row">
+          <a href="https://github.com/FSundiang" rel="noopener" class="social-btn" title="GitHub">🐱</a>
+          <a href="https://www.linkedin.com/in/francis-sundiang-88b35533b/"  rel="noopener" class="social-btn" title="LinkedIn">🔗</a>
+          <a href="https://www.behance.net/Francis-Sundiang"  rel="noopener" class="social-btn" title="Behance">🅱️</a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal" style="animation-delay:.15s">
+        <div class="form-title">Send a Message ✦</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="John" id="fname"/>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe" id="lname"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="john@example.com" id="femail"/>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Project Collaboration" id="fsubject"/>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project..." id="fmessage"></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm()">
+          Send Message ✦
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Crafted by <span>Francis Sundiang</span> · © 2026</p>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast">✅ Message sent! I'll get back to you soon.</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <div class="lightbox-content" onclick="event.stopPropagation()">
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Certificate"/>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
