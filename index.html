@@ -75,6 +75,7 @@
     <button class="nav-btn" id="nav-certs" onclick="navigate('certs')">Certifications</button>
     <button class="nav-btn" id="nav-projects" onclick="navigate('projects')">Projects</button>
     <button class="nav-btn" id="nav-contact" onclick="navigate('contact')">Contact</button>
+    <a href="certificates/Resume_Sundiang.pdf" download class="nav-resume" target="_blank">⬇ Resume</a>
   </div>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
     <span></span>
@@ -93,16 +94,26 @@
           <span></span> Available for opportunities
         </div>
         <h1 class="hero-name">Francis Carl<br><em>Sundiang</em></h1>
+        <div class="hero-role">
+          <span class="hero-role-tag">UI/UX Designer</span>
+          <span class="hero-role-sep">·</span>
+          <span class="hero-role-tag">Front-End Developer</span>
+          <span class="hero-role-sep">·</span>
+          <span class="hero-role-tag">BS Information Technology</span>
+        </div>
         <p class="hero-desc">
-          An aspiring UI/UX Designer and Front-End Developer pursuing a BS in Information Technology (Web Development) at Holy Angel University, passionate about creating user-friendly and visually engaging digital experiences using Figma, HTML, CSS, and JavaScript, while drawing inspiration from modern UI trends to build intuitive and meaningful interfaces.
+         I’m Francis Carl Sundiang, a UI/UX Designer and Front-End Developer who creates user-centered designs and responsive web interfaces that are both visually compelling and easy to use.
         </p>
         <div class="hero-cta">
           <button class="btn-primary" onclick="navigate('projects')">
-            ▶ View My Work
+            ▶ Explore My Projects
           </button>
           <button class="btn-ghost" onclick="navigate('contact')">
             ✉ Get In Touch
           </button>
+          <a href="certificates/Resume_Sundiang.pdf" download="Sundiang_CV.pdf" class="btn-cv">
+            <span class="btn-cv-icon">⬇</span> Download CV
+          </a>
         </div>
       </div>
       <div class="hero-right">
@@ -111,9 +122,19 @@
             <div class="avatar-initials">FS</div>
             <div class="avatar-glow"></div>
           </div>
-          <div class="avatar-badge">
-            <div class="badge-num"></div>
-            <div class="badge-label">Fresh Graduate</div>
+          <div class="avatar-card avatar-card-main">
+            <div class="ac-dot"></div>
+            <div>
+              <div class="ac-label">Status</div>
+              <div class="ac-value">Open to Opportunities</div>
+            </div>
+          </div>
+          <div class="avatar-card avatar-card-mini">
+            <span style="font-size:1rem">🎓</span>
+            <div>
+              <div class="ac-label">Degree</div>
+              <div class="ac-value" style="font-size:.78rem">BSIT Web Development</div>
+            </div>
           </div>
         </div>
       </div>
@@ -140,36 +161,43 @@
         <div class="skill-card reveal">
           <div class="skill-icon">⚡</div>
           <div class="skill-name">Angular / TypeScript</div>
+          <div class="skill-pct">75%</div>
           <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
         </div>
         <div class="skill-card reveal">
           <div class="skill-icon">🎨</div>
           <div class="skill-name">UI/UX Design</div>
+          <div class="skill-pct">85%</div>
           <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
         </div>
          <div class="skill-card reveal">
           <div class="skill-icon">🎨</div>
           <div class="skill-name">Figma | Adobe Photoshop</div>
+          <div class="skill-pct">80%</div>
           <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
         </div>
         <div class="skill-card reveal">
           <div class="skill-icon">🛠️</div>
           <div class="skill-name">HTML</div>
+          <div class="skill-pct">90%</div>
           <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
         </div>
         <div class="skill-card reveal">
           <div class="skill-icon">🎨</div>
           <div class="skill-name">CSS</div>
+          <div class="skill-pct">80%</div>
           <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
         </div>
         <div class="skill-card reveal">
           <div class="skill-icon">🛠️</div>
           <div class="skill-name">JavaScript</div>
+          <div class="skill-pct">80%</div>
           <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
         </div>
         <div class="skill-card reveal">
           <div class="skill-icon">🗄️</div>
-          <div class="skill-name">Slightly knowledge in SQL</div>
+          <div class="skill-name">SQL Exposure</div>
+          <div class="skill-pct">50%</div>
           <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
         </div>
       </div>
@@ -363,7 +391,7 @@
         </div>
         <div class="project-body">
           <div class="project-title">Mother and Child Pharmacy (Capstone)</div>
-          <p class="project-desc">A Medfind website based located in Porac, Pampanga.</p>
+          <p class="project-desc">Full-stack pharmacy management system (capstone project) built with Angular, Node.js & MySQL.</p>
           <div class="project-stack">
             <span class="stack-tag">Angular</span>
             <span class="stack-tag">Node.js</span>
@@ -386,7 +414,7 @@
         </div>
         <div class="project-body">
           <div class="project-title">MediCare</div>
-          <p class="project-desc">A MediCare website mockup</p>
+          <p class="project-desc">Healthcare pharmacy landing page with clean UI design, built with Figma and deployed via Vercel.</p>
           <div class="project-stack">
             <span class="stack-tag">Figma</span>
             <span class="stack-tag">TypeScript</span>
@@ -407,7 +435,7 @@
         </div>
         <div class="project-body">
           <div class="project-title">Wedding Website</div>
-          <p class="project-desc">A website for wedding invitation.</p>
+          <p class="project-desc">Elegant wedding invitation website with responsive layout, RSVP section, and event details.</p>
           <div class="project-stack">
             <span class="stack-tag">HTML</span>
             <span class="stack-tag">CSS</span>
@@ -429,7 +457,7 @@
         </div>
         <div class="project-body">
           <div class="project-title">Writing Assistant</div>
-          <p class="project-desc">A writing assitant landing page mockup, not fully functional.</p>
+          <p class="project-desc">AI writing assistant SaaS landing page with modern design system and component hierarchy.</p>
           <div class="project-stack">
             <span class="stack-tag">Figma</span>
             <span class="stack-tag">TypeScript</span>
@@ -451,7 +479,7 @@
         </div>
         <div class="project-body">
           <div class="project-title">Writing Assistance</div>
-          <p class="project-desc">A writing assistance landing page mockup, not fully functional.</p>
+          <p class="project-desc">Web-based writing assistance landing page showcasing UI/UX design skills and responsive layout.</p>
           <div class="project-stack">
             <span class="stack-tag">Figma</span>
             <span class="stack-tag">TypeScript</span>
@@ -472,7 +500,7 @@
         </div>
         <div class="project-body">
           <div class="project-title">NekoBento (School Project)</div>
-          <p class="project-desc">A headless e-commerce website containing Filipino and Japanese foods.</p>
+          <p class="project-desc">Full-stack e-commerce platform with PHP & MySQL backend, featuring Filipino and Japanese cuisine.</p>
           <div class="project-stack">
             <span class="stack-tag">PHP</span>
             <span class="stack-tag">MySQL</span>
@@ -493,7 +521,7 @@
         </div>
         <div class="project-body">
           <div class="project-title">Final Peta in Introduction in Web Development</div>
-          <p class="project-desc">A Final Project introduction that we've created on 1st year</p>
+          <p class="project-desc">First-year capstone web project demonstrating core HTML, CSS, and JavaScript fundamentals.</p>
           <div class="project-stack">
             <span class="stack-tag">HTML</span>
             <span class="stack-tag">CSS</span>
@@ -516,7 +544,7 @@
         </div>
         <div class="project-body">
           <div class="project-title">Final Peta in our Mobile Design based project</div>
-          <p class="project-desc">Flutter Design, view it in Mobile Responsiveness</p>
+          <p class="project-desc">Mobile-first Flutter/Dart application with responsive design and cross-platform compatibility.</p>
           <div class="project-stack">
             <span class="stack-tag">Flutter</span>
             <span class="stack-tag">Dart</span>
@@ -537,7 +565,7 @@
         </div>
         <div class="project-body">
           <div class="project-title">Band 94</div>
-          <p class="project-desc">A simple band website for showcasing their music and events.</p>
+          <p class="project-desc">WordPress-powered band website for promoting music, events, and fan engagement.</p>
           <div class="project-stack">
             <span class="stack-tag">Wordpress</span>
           </div>
@@ -565,7 +593,7 @@
           </div>
           <div class="project-body">
             <div class="project-title">To-Do List App</div>
-            <p class="project-desc">A List that can saved your task.</p>
+            <p class="project-desc">Android to-do list application built with Kotlin, featuring persistent local task storage.</p>
             <div class="project-stack">
               <span class="stack-tag">Kotlin</span>
               <span class="stack-tag">Mobile Design</span>

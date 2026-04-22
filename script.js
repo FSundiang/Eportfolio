@@ -64,6 +64,11 @@ function navigate(id) {
   document.getElementById(NAV_IDS[id]).classList.add('active');
   current = id;
   window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Re-trigger stat counters when navigating to about page
+  if (id === 'about') {
+    setTimeout(animateCounters, 300);
+  }
 }
 
 
@@ -123,6 +128,7 @@ document.querySelectorAll(HOVER_TARGETS).forEach(el => {
     ring.style.height      = '58px';
     ring.style.opacity     = '0.25';
     ring.style.borderColor = 'var(--accent2)';
+
   });
   el.addEventListener('mouseleave', () => {
     cur.style.transform    = 'translate(-50%,-50%) scale(1)';
@@ -164,7 +170,7 @@ document.querySelectorAll(HOVER_TARGETS).forEach(el => {
         life:  1,
         decay: 0.03 + Math.random() * 0.03,
         r:     2 + Math.random() * 3,
-        hue:   Math.random() > 0.5 ? '0,245,196' : '123,97,255',
+        hue:   Math.random() > 0.5 ? '216,90,48' : '240,153,123',
       });
     }
   });
@@ -240,19 +246,26 @@ document.querySelectorAll(HOVER_TARGETS).forEach(el => {
 /* ----------------------------------------------------------
    7. STAT COUNTER ANIMATION
 ---------------------------------------------------------- */
+const STAT_DATA = [
+  { num: 4, suffix: '+', label: 'Projects Completed' },
+  { num: 12, suffix: '+', label: 'Certifications' },
+  { num: 100, suffix: '%', label: 'Passion' }
+];
+
 function animateCounters() {
-  document.querySelectorAll('.stat-num').forEach(el => {
-    const target    = parseInt(el.textContent);
-    const suffix    = el.querySelector('span')?.textContent || '';
-    let count       = 0;
-    const steps     = 50;
-    const increment = Math.ceil(target / steps);
+  document.querySelectorAll('.stat-num').forEach((el, idx) => {
+    const data = STAT_DATA[idx];
+    if (!data) return;
+    let count = 0;
+    const steps = 50;
+    const increment = Math.ceil(data.num / steps);
+    el.innerHTML = '0<span>' + data.suffix + '</span>';
 
     const timer = setInterval(() => {
-      count = Math.min(count + increment, target);
-      el.innerHTML = count + '<span>' + suffix + '</span>';
-      if (count >= target) clearInterval(timer);
-    }, 1200 / steps);
+      count = Math.min(count + increment, data.num);
+      el.innerHTML = count + '<span>' + data.suffix + '</span>';
+      if (count >= data.num) clearInterval(timer);
+    }, 1000 / steps);
   });
 }
 setTimeout(animateCounters, 500);
