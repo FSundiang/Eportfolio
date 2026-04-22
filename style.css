@@ -728,15 +728,6 @@ footer span { color: var(--accent); font-weight: 600; }
   .projects-grid { grid-template-columns: 1fr; }
   body { cursor: auto; }
   #cursor, #cursor-ring { display: none; }
-  .ac-label {
-    font-size: 0.65rem;
-    line-height: 1.25;
-  }
-
-  .ac-value {
-    font-size: 0.78rem;
-    font-weight: 600;
-  }
 }
 
 @media (max-width: 480px) {
