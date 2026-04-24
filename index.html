@@ -4,14 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SEO FIX 1 — Descriptive <title> (keyword-rich, under 60 chars)
-     ═══════════════════════════════════════════════════════════ -->
 <title>Francis Sundiang | UI/UX Designer & Front-End Developer</title>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SEO FIX 2 — Meta description (was completely missing)
-     ═══════════════════════════════════════════════════════════ -->
 <meta name="description" content="Francis Carl Sundiang — UI/UX Designer and Front-End Developer from Pampanga, Philippines. Specialising in Angular, TypeScript, Figma, and responsive web design. Open to opportunities."/>
 <meta name="keywords"    content="UI/UX Designer, Front-End Developer, Angular, TypeScript, Figma, Web Developer Philippines, Portfolio, Francis Sundiang, BSIT"/>
 <meta name="author"      content="Francis Carl Sundiang"/>
@@ -131,10 +125,6 @@
 <!-- Ambient blobs -->
 <div class="blob blob1" aria-hidden="true"></div>
 <div class="blob blob2" aria-hidden="true"></div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     SEO FIX 6 — Semantic <nav> with aria-label
-     ═══════════════════════════════════════════════════════════ -->
 <nav aria-label="Main navigation">
   <div class="logo" onclick="navigate('about')" role="button" tabindex="0"
        aria-label="Francis Sundiang — home">FS<span>.</span></div>
@@ -157,9 +147,7 @@
   </button>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════════════
-     Skip-to-content link (accessibility + Lighthouse Best Practices)
-     ═══════════════════════════════════════════════════════════ -->
+
 <a href="#main-content" class="skip-link"
    style="position:absolute;top:-40px;left:0;background:var(--accent);color:#fff;padding:8px 16px;z-index:9999;border-radius:0 0 8px 0;transition:top .2s;font-size:.85rem;font-weight:600;text-decoration:none"
    onfocus="this.style.top='0'" onblur="this.style.top='-40px'">
@@ -247,7 +235,7 @@
       </div>
     </div>
 
-    <!-- Skills — use <section> + <h2> for proper document outline (SEO) -->
+  
     <section class="skills-section" aria-labelledby="skills-title">
       <h2 class="section-title" id="skills-title">Core <span>Skills</span></h2>
       <div class="skills-grid">
@@ -353,13 +341,6 @@
 
     <div class="certs-grid">
 
-      <!-- ═══════════════════════════════════════════════════
-           PERFORMANCE FIX 3 — Every <img> gets:
-             • explicit width + height  → prevents CLS (layout shift)
-             • loading="lazy"           → defers off-screen images
-             • decoding="async"         → non-blocking decode
-             • descriptive alt text     → SEO + accessibility
-           ═══════════════════════════════════════════════════ -->
 
       <article class="cert-card reveal" style="animation-delay:.05s">
         <div class="cert-issuer-logo" style="background:rgba(255,153,0,.1)" aria-hidden="true">🌐</div>
@@ -961,11 +942,7 @@
   ✅ Message sent! I'll get back to you soon.
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     PERFORMANCE FIX 5 — Lightbox image has explicit dimensions
-                          Fixes the "Image elements do not have
-                          explicit width and height" Lighthouse flag
-     ═══════════════════════════════════════════════════════════ -->
+
 <div class="lightbox" id="lightbox" onclick="closeLightbox()"
      role="dialog" aria-modal="true" aria-label="Image lightbox">
   <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">✕</button>
@@ -977,18 +954,6 @@
     <div class="lightbox-caption" id="lightbox-caption" aria-live="polite"></div>
   </div>
 </div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     SEO FIX 7 — robots.txt note
-     ═══════════════════════════════════════════════════════════
-     ACTION REQUIRED: Create a robots.txt in your site root with:
-     ─────────────────────────────────────────────────────────
-     User-agent: *
-     Allow: /
-     Sitemap: https://yourdomain.com/sitemap.xml
-     ─────────────────────────────────────────────────────────
-     This fixes "robots.txt is not valid" from Lighthouse.
-     ═══════════════════════════════════════════════════════════ -->
 
 <script>
   /* ── Tab switcher ── */
