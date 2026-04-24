@@ -1,0 +1,7 @@
+# robots.txt — Francis Sundiang Portfolio
+# Place this file in your website's root folder (same level as index.html)
+
+User-agent: *
+Allow: /
+
+Sitemap: https://eportfolio-sundiang.vercel.app/sitemap.xml
