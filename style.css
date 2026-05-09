@@ -349,6 +349,33 @@ main {
   background: radial-gradient(ellipse at 30% 20%, rgba(216,90,48,.1) 0%, transparent 60%);
 }
 
+.portrait-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  z-index: 0;
+}
+.portrait-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.portrait-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(13,12,12,0)    60%,
+    rgba(13,12,12,0.55) 100%
+  );
+  pointer-events: none;
+}
+
 .avatar-card {
   position: absolute; 
   background: rgba(22,20,19,.92);
@@ -359,14 +386,15 @@ main {
   display: flex; 
   align-items: center; 
   gap: 10px;
+  z-index: 2;
 }
 .avatar-card-main { 
   bottom: -18px; 
   right: -18px; 
 }
 .avatar-card-mini { 
-  top: 22px; 
-  left: -22px; 
+  top: -14px; 
+  left: -14px; 
 }
 .ac-dot {
   width: 8px; 
@@ -1390,7 +1418,7 @@ footer span {
  
   /* Keep cards absolute but pull them closer so they don't overflow */
   .avatar-card-main { right: -12px; bottom: -12px; }
-  .avatar-card-mini { top: 14px;   left:  -12px;  }
+  .avatar-card-mini { top: 14px;   left:  14px;  }
  
   .stats-row         { padding: 0 28px; }
   .skills-section,

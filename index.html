@@ -194,7 +194,11 @@
       <div class="hero-right">
         <div class="avatar-wrap">
           <div class="avatar-frame" role="img" aria-label="Francis Carl Sundiang — avatar">
-            <div class="avatar-initials" aria-hidden="true">FS</div>
+        <!-- Portrait photo -->
+        <div class="portrait-wrap">
+          <img src="certificates/barong.jpg" alt="Francis Carl Sundiang" />
+          <div class="portrait-overlay"></div>
+        </div>
             <div class="avatar-glow"     aria-hidden="true"></div>
           </div>
           <div class="avatar-card avatar-card-main">
@@ -214,7 +218,7 @@
         </div>
       </div>
     </div><!-- /about-hero -->
-
+    
     <!-- Stats -->
     <div class="stats-row" aria-label="Portfolio statistics">
       <div class="stat-item">
@@ -630,9 +634,9 @@
               <span class="stack-tag">TypeScript</span>
             </div>
             <div class="project-actions">
-              <a href="https://writing-assistant.vercel.app/" target="_blank" rel="noopener noreferrer"
+              <a href="https://writing-assitant.vercel.app/" target="_blank" rel="noopener noreferrer"
                  class="proj-btn proj-btn-primary" aria-label="View Writing Assistant live demo (opens in new tab)">↗ Live Demo</a>
-              <a href="https://github.com/FSundiang/writing-assistant" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/FSundiang/writing-assitant" target="_blank" rel="noopener noreferrer"
                  class="proj-btn proj-btn-secondary" aria-label="View Writing Assistant source on GitHub (opens in new tab)">⌥ GitHub</a>
             </div>
           </div>
@@ -661,87 +665,6 @@
                  class="proj-btn proj-btn-primary" aria-label="View Writing Assistance live demo (opens in new tab)">↗ Live Demo</a>
               <a href="https://github.com/FSundiang/Websiteassitance" target="_blank" rel="noopener noreferrer"
                  class="proj-btn proj-btn-secondary" aria-label="View Writing Assistance source on GitHub (opens in new tab)">⌥ GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal" style="animation-delay:.15s">
-          <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a1a,#0d2a1a)"
-               onclick="openProjectMedia('certificates/neko.png','NekoBento','image')"
-               role="button" tabindex="0" aria-label="Preview NekoBento project">
-            <div class="project-thumb-inner" aria-hidden="true">🛒</div>
-            <div class="project-overlay"     aria-hidden="true"></div>
-            <img src="certificates/neko.png"
-                 alt="NekoBento e-commerce platform screenshot"
-                 class="project-thumb-img" loading="lazy" width="340" height="200" decoding="async"/>
-            <span class="project-status status-live">Live</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">NekoBento (School Project)</h3>
-            <p class="project-desc">Full-stack e-commerce platform with PHP &amp; MySQL backend, featuring Filipino and Japanese cuisine.</p>
-            <div class="project-stack">
-              <span class="stack-tag">PHP</span>
-              <span class="stack-tag">MySQL</span>
-            </div>
-            <div class="project-actions">
-              <button class="proj-btn proj-btn-primary" aria-label="NekoBento live demo not yet available">↗ Live Demo</button>
-              <a href="https://github.com/FSundiang/food" target="_blank" rel="noopener noreferrer"
-                 class="proj-btn proj-btn-secondary" aria-label="View NekoBento source on GitHub (opens in new tab)">⌥ GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal" style="animation-delay:.2s">
-          <div class="project-thumb" style="background:linear-gradient(135deg,#1a1000,#2a1500)"
-               onclick="openProjectMedia('certificates/introweb.png','Final Peta - Intro Web Dev','image')"
-               role="button" tabindex="0" aria-label="Preview Intro Web Dev final project">
-            <div class="project-thumb-inner" aria-hidden="true">🎨</div>
-            <div class="project-overlay"     aria-hidden="true"></div>
-            <img src="certificates/introweb.png"
-                 alt="Introduction to Web Development final project screenshot"
-                 class="project-thumb-img" loading="lazy" width="340" height="200" decoding="async"/>
-            <span class="project-status status-live">Live</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Final Peta — Introduction to Web Development</h3>
-            <p class="project-desc">First-year capstone web project demonstrating core HTML, CSS, and JavaScript fundamentals.</p>
-            <div class="project-stack">
-              <span class="stack-tag">HTML</span>
-              <span class="stack-tag">CSS</span>
-              <span class="stack-tag">JavaScript</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://sample-project-design.netlify.app/" target="_blank" rel="noopener noreferrer"
-                 class="proj-btn proj-btn-primary" aria-label="View Intro Web Dev project live (opens in new tab)">↗ Live Demo</a>
-              <a href="https://github.com/FSundiang/introweb_finals" target="_blank" rel="noopener noreferrer"
-                 class="proj-btn proj-btn-secondary" aria-label="View Intro Web Dev source on GitHub (opens in new tab)">⌥ GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal" style="animation-delay:.2s">
-          <div class="project-thumb" style="background:linear-gradient(135deg,#1a1000,#2a1500)"
-               onclick="openProjectMedia('certificates/web-kicks.png','Final Peta - Web Kicks','image')"
-               role="button" tabindex="0" aria-label="Preview Web Kicks mobile design project">
-            <div class="project-thumb-inner" aria-hidden="true">🎨</div>
-            <div class="project-overlay"     aria-hidden="true"></div>
-            <img src="certificates/web-kicks.png"
-                 alt="Web Kicks mobile design project screenshot"
-                 class="project-thumb-img" loading="lazy" width="340" height="200" decoding="async"/>
-            <span class="project-status status-live">Live</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Final Peta — Mobile Design Project</h3>
-            <p class="project-desc">Mobile-first Flutter/Dart application with responsive design and cross-platform compatibility.</p>
-            <div class="project-stack">
-              <span class="stack-tag">Flutter</span>
-              <span class="stack-tag">Dart</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://flutter-web-sample.vercel.app/" target="_blank" rel="noopener noreferrer"
-                 class="proj-btn proj-btn-primary" aria-label="View Web Kicks live demo (opens in new tab)">↗ Live Demo</a>
-              <a href="https://github.com/FSundiang/flutter-web-sample" target="_blank" rel="noopener noreferrer"
-                 class="proj-btn proj-btn-secondary" aria-label="View Web Kicks source on GitHub (opens in new tab)">⌥ GitHub</a>
             </div>
           </div>
         </article>
